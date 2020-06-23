@@ -16,16 +16,15 @@ Reto #4 "Suma de enteros"
 
 
 def sum_int():
-    """Solicita dos números alusuario,
-    posteriormente suma los números e imprime
-    el resultado en pantalla.
-    """
+    """Solicita dos números alusuario, posteriormente suma los números e
+    imprime el resultado en pantalla."""
     num1 = int(input("Ingresa el primer número: "))
     num2 = int(input("Ingresa el segundo número: "))
 
-    helper_text = print(f'El resultado de sumar {num1} + {num2} es:')
+    print(f"El resultado de sumar {num1} + {num2} es:")
     sum_int = print(num1 + num2)
     return sum_int
+
 
 if __name__ == "__main__":
     sum_int()

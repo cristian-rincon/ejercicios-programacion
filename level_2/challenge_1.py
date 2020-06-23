@@ -10,9 +10,9 @@
 
 
 def min_maj_number(num1: int, num2: int) -> int:
-    """Recibe dos números, informa cual es el número mayor y la 
-    diferencia entre ambos. Si ambos números son iguales también
-    se lo indicará al usuario
+    """Recibe dos números, informa cual es el número mayor y la diferencia
+    entre ambos. Si ambos números son iguales también se lo indicará al
+    usuario.
 
     :type num1: int
     :param num1: Primer número para sumar
@@ -34,9 +34,10 @@ def min_maj_number(num1: int, num2: int) -> int:
     else:
         print("Ambos números son iguales.")
 
+
 if __name__ == "__main__":
-    
+
     num1 = int(input("Ingresa el primer número: "))
     num2 = int(input("Ingresa el segundo número: "))
 
-    min_maj_number(num1,num2)
+    min_maj_number(num1, num2)

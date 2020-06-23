@@ -11,8 +11,8 @@
 
 
 def in_range_number(num1: int, num2: int) -> int:
-    """Recibe dos números, el primero será el límite y el segundo
-    será el número a comparar. 
+    """Recibe dos números, el primero será el límite y el segundo será el
+    número a comparar.
 
     :type num1: int
     :param num1: Límite

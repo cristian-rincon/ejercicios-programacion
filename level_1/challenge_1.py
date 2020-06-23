@@ -13,10 +13,10 @@ Reto #1 “Hola Mundo”
 
 
 def hello1():
-    """Solicita el nombre del usuario y posteriormente 
-    imprime un saludo personalizado.
+    """Solicita el nombre del usuario y posteriormente imprime un saludo
+    personalizado.
 
-    :rtype: str 
+    :rtype: str
     """
     name = input("Ingresa tu nombre: ")
 
@@ -24,12 +24,12 @@ def hello1():
         greeting = print(f"Hola, {name}")
         return greeting
 
-    warning = print("El nombre no debe estar vacío")
+    print("El nombre no debe estar vacío")
+
 
 def hello2():
-    """Solicita el nombre y apellido del usuario,
-    posteriormente imprime un saludo personalizado.
-    """
+    """Solicita el nombre y apellido del usuario, posteriormente imprime un
+    saludo personalizado."""
     name = input("Ingresa tu nombre: ")
     lastname = input("Ingresa tu apellido: ")
 
@@ -37,7 +37,8 @@ def hello2():
         greeting = print(f"Hola, {name} {lastname}")
         return greeting
 
-    warning = print("El nombre no debe estar vacío")
+    print("El nombre no debe estar vacío")
+
 
 if __name__ == "__main__":
     hello1()

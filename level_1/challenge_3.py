@@ -23,21 +23,21 @@ Reto #3 "Mensaje multilínea"
 
 
 def multiline_message():
-    """Toma las categorías desde una lista y las imprime
-    en pantalla al usuario final
-    """
+    """Toma las categorías desde una lista y las imprime en pantalla al usuario
+    final."""
 
-    categories = ['Desarrollo e Ingeniería',
-                  'Diseño y Ux',
-                  'Marketing',
-                  'Negocios y Emprendimiento',
-                  'Producción Audiovisual',
-                  'Crecimiento Profesional'
-                  ]
+    categories = [
+        "Desarrollo e Ingeniería",
+        "Diseño y Ux",
+        "Marketing",
+        "Negocios y Emprendimiento",
+        "Producción Audiovisual",
+        "Crecimiento Profesional",
+    ]
 
     print("Platzi cuenta con cursos de:\n")
     for category in categories:
-        print(f'- {category}')
+        print(f"- {category}")
 
 
 if __name__ == "__main__":

@@ -32,7 +32,8 @@ def substraction(a: int, b: int) -> int:
 
 if __name__ == "__main__":
 
-    helper_text_1 = print("""
+    helper_text_1 = print(
+        """
     ¡Resta de pizzas!
     Este programa te ayudará a saber cuántas 
     porciones de pizzas te quedan luego de comerte algunas.
@@ -40,18 +41,17 @@ if __name__ == "__main__":
     Debes indicar el número de porciones inicial y
     cuántas te comiste.
     
-    """)
+    """
+    )
     num1 = int(input("Ingresa el número de porciones inicial: "))
     num2 = int(input("Ingresa el número de porciones que te comiste: "))
 
     pizzas_final_number = substraction(num1, num2)
 
     if pizzas_final_number < 0:
-        print('No puede existir un número negativo de pizzas')
+        print("No puede existir un número negativo de pizzas")
     else:
         if pizzas_final_number == 1:
-            helper_text = print(
-                f'Te queda {pizzas_final_number} porción de pizza.')
+            helper_text = print(f"Te queda {pizzas_final_number} porción de pizza.")
         else:
-            helper_text = print(
-                f'Te quedan {pizzas_final_number} porciones de pizza.')
+            helper_text = print(f"Te quedan {pizzas_final_number} porciones de pizza.")

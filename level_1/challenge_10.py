@@ -25,8 +25,9 @@ def miles_converter(miles):
 
     return result
 
+
 if __name__ == "__main__":
-    
+
     print("Convertidor de millas a kilómetros")
     print("==================================")
     miles = float(input(">>> Ingresa la cantidad de millas a convertir: "))
@@ -34,5 +35,3 @@ if __name__ == "__main__":
     result = miles_converter(miles)
 
     print(f">>> {miles} millas equivalen a {result} kilómetros.")
-
-    

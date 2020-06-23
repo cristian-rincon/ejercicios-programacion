@@ -34,13 +34,15 @@ tax = 19
 
 if __name__ == "__main__":
 
-    helper_text = print("""
+    helper_text = print(
+        """
     Divide la cuenta
     ============================================
     Este programa te permitirá saber cuanto debe
     pagar cada persona sobre la cuenta total del
     restaurante.
-    """)
+    """
+    )
 
     total = float(input("Indica el valor total de la cuenta: "))
     num_of_persons = float(input("¿Entre cuantas personas se dividirá la cuenta? "))
@@ -48,7 +50,11 @@ if __name__ == "__main__":
     calculate_cost_per_person = divide(total, num_of_persons)
     calculate_tip = (total * tip) / 100
     calculate_tax = (total * tax) / 100
-    
+
     print(f"Cada persona debe pagar: $ {calculate_cost_per_person} COP")
-    print(f"En esta cuenta pagaste el {tip}% en propinas, lo cual equivale a: $ {calculate_tip} COP")
-    print(f"En esta cuenta pagaste el {tax}% en impuestos, lo cual equivale a: $ {calculate_tax} COP")
+    print(
+        f"En esta cuenta pagaste el {tip}% en propinas, lo cual equivale a: $ {calculate_tip} COP"
+    )
+    print(
+        f"En esta cuenta pagaste el {tax}% en impuestos, lo cual equivale a: $ {calculate_tax} COP"
+    )

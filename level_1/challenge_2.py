@@ -11,16 +11,15 @@ Reto #2 "Hola... nombre y apellido"
 
 
 def helloworld_2():
-    """Solicita el nombre y apellido del usuario,
-    posteriormente imprime un saludo personalizado.
-    """
+    """Solicita el nombre y apellido del usuario, posteriormente imprime un
+    saludo personalizado."""
     name = input("Ingresa tu nombre: ")
     lastname = input("Ingresa tu apellido: ")
 
     if name == "":
-        warning = print("El nombre no debe estar vacío")
+        print("El nombre no debe estar vacío")
     elif lastname == "":
-        warning = print("El apellido no debe estar vacío")
+        print("El apellido no debe estar vacío")
     else:
         greeting = print(f"Hola, {name} {lastname}")
         return greeting

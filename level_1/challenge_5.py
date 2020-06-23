@@ -51,14 +51,16 @@ def multiplication(a: int, b: int) -> int:
 
 if __name__ == "__main__":
 
-    helper_text_1 = print("""
+    helper_text_1 = print(
+        """
     Ingresa 3 números, los primeros dos se sumarán, 
     el resultado se multiplicará por el tercero y 
     el valor final se escribirá en pantalla.
-    """)
+    """
+    )
     num1 = int(input("Ingresa el primer número: "))
     num2 = int(input("Ingresa el segundo número: "))
     num3 = int(input("Ingresa el tercer número: "))
 
-    helper_text = print(f'El resultado es:')
-    print(multiplication(sum(num1,num2),num3))
+    helper_text = print(f"El resultado es:")
+    print(multiplication(sum(num1, num2), num3))

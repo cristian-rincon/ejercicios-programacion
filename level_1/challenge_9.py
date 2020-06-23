@@ -36,13 +36,15 @@ Reto #9 "Calculando días"
 
 if __name__ == "__main__":
 
-    helper_text = print("""
+    helper_text = print(
+        """
     Calculando días
     ===============================================
     Este programa te permitirá saber cuantas horas,
     minutos y segundos hay en una cantidad de días 
     dados.
-    """)
+    """
+    )
 
     days = int(input(">>> Indica la cantidad de días a calcular: "))
 
