@@ -12,3 +12,8 @@ Ejercicios de programación - Nivel 1
    :members:
    :undoc-members:
    :show-inheritance:
+
+.. automodule:: nivel_1.multiline_message
+   :members:
+   :undoc-members:
+   :show-inheritance:
