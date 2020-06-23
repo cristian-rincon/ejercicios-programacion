@@ -18,3 +18,13 @@ Ejercicios de programación - Nivel 2
    :members:
    :undoc-members:
    :show-inheritance:
+
+.. automodule:: level_2.challenge_4
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+.. automodule:: level_2.challenge_5
+   :members:
+   :undoc-members:
+   :show-inheritance:
