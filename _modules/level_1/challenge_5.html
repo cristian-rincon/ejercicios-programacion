@@ -201,17 +201,19 @@
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
 
-    <span class="n">helper_text_1</span> <span class="o">=</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">    Ingresa 3 números, los primeros dos se sumarán, </span>
-<span class="s2">    el resultado se multiplicará por el tercero y </span>
-<span class="s2">    el valor final se escribirá en pantalla.</span>
-<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+    <span class="n">helper_text_1</span> <span class="o">=</span> <span class="nb">print</span><span class="p">(</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Ingresa 3 números, los primeros dos se sumarán, </span>
+<span class="sd">    el resultado se multiplicará por el tercero y </span>
+<span class="sd">    el valor final se escribirá en pantalla.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="p">)</span>
     <span class="n">num1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingresa el primer número: &quot;</span><span class="p">))</span>
     <span class="n">num2</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingresa el segundo número: &quot;</span><span class="p">))</span>
     <span class="n">num3</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingresa el tercer número: &quot;</span><span class="p">))</span>
 
-    <span class="n">helper_text</span> <span class="o">=</span> <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;El resultado es:&#39;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">multiplication</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span><span class="n">num2</span><span class="p">),</span><span class="n">num3</span><span class="p">))</span>
+    <span class="n">helper_text</span> <span class="o">=</span> <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;El resultado es:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">multiplication</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">),</span> <span class="n">num3</span><span class="p">))</span>
 </pre></div>
 
            </div>

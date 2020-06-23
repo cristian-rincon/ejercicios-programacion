@@ -161,16 +161,15 @@
 
 
 <div class="viewcode-block" id="helloworld_2"><a class="viewcode-back" href="../../modules/nivel_1.html#level_1.challenge_2.helloworld_2">[docs]</a><span class="k">def</span> <span class="nf">helloworld_2</span><span class="p">():</span>
-    <span class="sd">&quot;&quot;&quot;Solicita el nombre y apellido del usuario,</span>
-<span class="sd">    posteriormente imprime un saludo personalizado.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="sd">&quot;&quot;&quot;Solicita el nombre y apellido del usuario, posteriormente imprime un</span>
+<span class="sd">    saludo personalizado.&quot;&quot;&quot;</span>
     <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingresa tu nombre: &quot;</span><span class="p">)</span>
     <span class="n">lastname</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingresa tu apellido: &quot;</span><span class="p">)</span>
 
     <span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;&quot;</span><span class="p">:</span>
-        <span class="n">warning</span> <span class="o">=</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El nombre no debe estar vacío&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El nombre no debe estar vacío&quot;</span><span class="p">)</span>
     <span class="k">elif</span> <span class="n">lastname</span> <span class="o">==</span> <span class="s2">&quot;&quot;</span><span class="p">:</span>
-        <span class="n">warning</span> <span class="o">=</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El apellido no debe estar vacío&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El apellido no debe estar vacío&quot;</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">greeting</span> <span class="o">=</span> <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Hola, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">lastname</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">greeting</span></div>

@@ -182,29 +182,29 @@
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
 
-    <span class="n">helper_text_1</span> <span class="o">=</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">    ¡Resta de pizzas!</span>
-<span class="s2">    Este programa te ayudará a saber cuántas </span>
-<span class="s2">    porciones de pizzas te quedan luego de comerte algunas.</span>
+    <span class="n">helper_text_1</span> <span class="o">=</span> <span class="nb">print</span><span class="p">(</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    ¡Resta de pizzas!</span>
+<span class="sd">    Este programa te ayudará a saber cuántas </span>
+<span class="sd">    porciones de pizzas te quedan luego de comerte algunas.</span>
 
-<span class="s2">    Debes indicar el número de porciones inicial y</span>
-<span class="s2">    cuántas te comiste.</span>
-<span class="s2">    </span>
-<span class="s2">    &quot;&quot;&quot;</span><span class="p">)</span>
+<span class="sd">    Debes indicar el número de porciones inicial y</span>
+<span class="sd">    cuántas te comiste.</span>
+<span class="sd">    </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="p">)</span>
     <span class="n">num1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingresa el número de porciones inicial: &quot;</span><span class="p">))</span>
     <span class="n">num2</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingresa el número de porciones que te comiste: &quot;</span><span class="p">))</span>
 
     <span class="n">pizzas_final_number</span> <span class="o">=</span> <span class="n">substraction</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">)</span>
 
     <span class="k">if</span> <span class="n">pizzas_final_number</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;No puede existir un número negativo de pizzas&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;No puede existir un número negativo de pizzas&quot;</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">pizzas_final_number</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
-            <span class="n">helper_text</span> <span class="o">=</span> <span class="nb">print</span><span class="p">(</span>
-                <span class="sa">f</span><span class="s1">&#39;Te queda </span><span class="si">{</span><span class="n">pizzas_final_number</span><span class="si">}</span><span class="s1"> porción de pizza.&#39;</span><span class="p">)</span>
+            <span class="n">helper_text</span> <span class="o">=</span> <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Te queda </span><span class="si">{</span><span class="n">pizzas_final_number</span><span class="si">}</span><span class="s2"> porción de pizza.&quot;</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="n">helper_text</span> <span class="o">=</span> <span class="nb">print</span><span class="p">(</span>
-                <span class="sa">f</span><span class="s1">&#39;Te quedan </span><span class="si">{</span><span class="n">pizzas_final_number</span><span class="si">}</span><span class="s1"> porciones de pizza.&#39;</span><span class="p">)</span>
+            <span class="n">helper_text</span> <span class="o">=</span> <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Te quedan </span><span class="si">{</span><span class="n">pizzas_final_number</span><span class="si">}</span><span class="s2"> porciones de pizza.&quot;</span><span class="p">)</span>
 </pre></div>
 
            </div>
