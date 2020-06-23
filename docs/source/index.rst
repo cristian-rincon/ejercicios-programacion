@@ -3,19 +3,19 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Ejercicios de programacion's documentation!
+Bienvenidos a la documentacion del repositorio Ejercicios de programacion!
 ======================================================
 
 .. toctree::
    :maxdepth: 4
-   :caption: Contents:
+   :caption: Contenidos:
    :glob:
 
    modules/*
 
 
 
-Indices and tables
+Indices
 ==================
 
 * :ref:`genindex`
