@@ -10,6 +10,10 @@ PROJECT_BASE= '{{ cookiecutter.repo_name }}'
 # COMMANDS                                                                      #
 #################################################################################
 
+## Clean cache files
+clean:
+	rm -rf **/__pycache__
+
 ## Install Python Dependencies from requirements.txt file
 install_dep:
 	pip install -r requirements.txt
