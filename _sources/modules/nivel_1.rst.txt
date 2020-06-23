@@ -27,3 +27,8 @@ Ejercicios de programación - Nivel 1
    :members:
    :undoc-members:
    :show-inheritance:
+
+.. automodule:: nivel_1.substraction
+   :members:
+   :undoc-members:
+   :show-inheritance:
