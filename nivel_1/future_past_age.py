@@ -1,6 +1,6 @@
 """
 Reto #7 "Edad futura y pasada"
-==========================
+==============================
 
 .. note::
 
@@ -10,7 +10,7 @@ Reto #7 "Edad futura y pasada"
 
     Ejemplo: [nombre] el año pasado tenías X años y el próximo año cumplirás Y años.
 
-.. code-block:: python
+.. code-block::
 
     from .substraction import substraction
     from .sum_multiplication import sum
