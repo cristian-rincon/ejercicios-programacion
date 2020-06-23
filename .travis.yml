@@ -5,9 +5,11 @@ install:
 
 script:
   # Use Sphinx to make the html docs
+  - cd ./docs/
   - make html
   # Tell GitHub not to use jekyll to compile the docs
-  - touch build/html/.nojekyll
+  - ls
+  - touch ./build/html/.nojekyll
 
 # Tell Travis CI to copy the documentation to the gh-pages branch of
 # your GitHub repository.
@@ -18,4 +20,4 @@ deploy:
   keep-history: true
   on:
     branch: master
-  local_dir: build/html/
+  local_dir: ./docs/build/html/
