@@ -28,7 +28,7 @@ tests:install_dep
 	pytest --cov=$(PROJECT_BASE) tests/
 	
 ## Make docs with sphinx
-docs:install_dep
+docs:
 	cd docs; make html
 	cd docs; xdg-open build/html/index.html
 
