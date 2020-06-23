@@ -10,10 +10,37 @@ Reto #7 "Edad futura y pasada"
 
     Ejemplo: [nombre] el año pasado tenías X años y el próximo año cumplirás Y años.
 
+.. code-block:: python
+
+    from .substraction import substraction
+    from .sum_multiplication import sum
+
+
+    if __name__ == "__main__":
+
+        helper_text_1 = print(""
+        ¡Edad futura y pasada!
+        Este programa te ayudará a saber cuantos años
+        tenías el año pasado y cuantos tendrás el siguiente
+
+        Debes indicar tu nombre y tu edad actual.
+        "")
+        name = input('¿Cómo te llamas? ')
+        actual_age = int(input("¿Cuantos años tienes? "))
+        num2 = 1
+        last_year_age = substraction(actual_age, num2)
+        next_year_age = sum(actual_age, num2)
+
+        if name != "":
+            print(f'Hola {name}, el año pasado tenías {last_year_age} años ')
+            print(f'y el próximo año cumplirás {next_year_age} años.')
+        else:
+            print('El nombre no debe estar vacío')
+
 """
 
-from substraction import substraction
-from sum_multiplication import sum
+from .substraction import substraction
+from .sum_multiplication import sum
 
 
 if __name__ == "__main__":
@@ -27,10 +54,10 @@ if __name__ == "__main__":
     
     """)
     name = input('¿Cómo te llamas? ')
-    num1 = int(input("¿Cuantos años tienes? "))
+    actual_age = int(input("¿Cuantos años tienes? "))
     num2 = 1
-    last_year_age = substraction(num1, num2)
-    next_year_age = sum(num1, num2)
+    last_year_age = substraction(actual_age, num2)
+    next_year_age = sum(actual_age, num2)
 
     if name != "":
         print(f'Hola {name}, el año pasado tenías {last_year_age} años ')

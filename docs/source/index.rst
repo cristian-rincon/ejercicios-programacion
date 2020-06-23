@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 Bienvenidos a la documentacion del repositorio Ejercicios de programacion!
-======================================================
+===========================================================================
 
 .. toctree::
    :maxdepth: 4
