@@ -90,6 +90,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#reto-4-suma-de-enteros">Reto #4 “Suma de enteros”</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#reto-5-suma-y-multiplicacion">Reto #5 “Suma y multiplicación”</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#reto-6-resta-de-pizzas">Reto #6 “Resta de pizzas”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reto-7-edad-futura-y-pasada">Reto #7 “Edad futura y pasada”</a></li>
 </ul>
 </li>
 </ul>
@@ -330,6 +331,42 @@ comprensible para cualquier persona, imprescindible pensar en tus usuarios 😉.
 </dl>
 </dd></dl>
 
+</div>
+<span class="target" id="module-nivel_1.future_past_age"></span><div class="section" id="reto-7-edad-futura-y-pasada">
+<h2>Reto #7 “Edad futura y pasada”<a class="headerlink" href="#reto-7-edad-futura-y-pasada" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Instrucciones: pide al usuario que indique su nombre y su edad. 
+Como mensaje de salida le indicarás que edad tuvo el año pasado 
+y cuantos años tendrá el siguiente año.</p>
+<p>Ejemplo: [nombre] el año pasado tenías X años y el próximo año cumplirás Y años.</p>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>from .substraction import substraction
+from .sum_multiplication import sum
+
+
+if __name__ == &quot;__main__&quot;:
+
+    helper_text_1 = print(&quot;&quot;
+    ¡Edad futura y pasada!
+    Este programa te ayudará a saber cuantos años
+    tenías el año pasado y cuantos tendrás el siguiente
+
+    Debes indicar tu nombre y tu edad actual.
+    &quot;&quot;)
+    name = input(&#39;¿Cómo te llamas? &#39;)
+    actual_age = int(input(&quot;¿Cuantos años tienes? &quot;))
+    num2 = 1
+    last_year_age = substraction(actual_age, num2)
+    next_year_age = sum(actual_age, num2)
+
+    if name != &quot;&quot;:
+        print(f&#39;Hola {name}, el año pasado tenías {last_year_age} años &#39;)
+        print(f&#39;y el próximo año cumplirás {next_year_age} años.&#39;)
+    else:
+        print(&#39;El nombre no debe estar vacío&#39;)
+</pre></div>
+</div>
 </div>
 </div>
 

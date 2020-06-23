@@ -32,3 +32,8 @@ Ejercicios de programación - Nivel 1
    :members:
    :undoc-members:
    :show-inheritance:
+
+.. automodule:: nivel_1.future_past_age
+   :members:
+   :undoc-members:
+   :show-inheritance:
