@@ -88,6 +88,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#reto-2-hola-nombre-y-apellido">Reto #2 “Hola… nombre y apellido”</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#reto-3-mensaje-multilinea">Reto #3 “Mensaje multilínea”</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#reto-4-suma-de-enteros">Reto #4 “Suma de enteros”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reto-5-suma-y-multiplicacion">Reto #5 “Suma y multiplicación”</a></li>
 </ul>
 </li>
 </ul>
@@ -183,7 +184,7 @@ posteriormente imprime un saludo personalizado.</p>
 imprime un saludo personalizado.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>str</p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)">str</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -248,6 +249,55 @@ número de decimales después del punto.</p>
 <dd><p>Solicita dos números alusuario,
 posteriormente suma los números e imprime
 el resultado en pantalla.</p>
+</dd></dl>
+
+</div>
+<span class="target" id="module-nivel_1.sum_multiplication"></span><div class="section" id="reto-5-suma-y-multiplicacion">
+<h2>Reto #5 “Suma y multiplicación”<a class="headerlink" href="#reto-5-suma-y-multiplicacion" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Instrucciones: añadiendo un extra al reto anterior 
+ahora el usuario ingresará 3 números, sumarás los 2 
+primeros y el resultado será multiplicado por el tercero. 
+Añade las consideraciones del punto decimal del reto anterior.</p>
+<p>Ejemplo:</p>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Datos</span> <span class="n">de</span> <span class="n">entrada</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span>
+<span class="n">Resultado</span><span class="p">:</span><span class="mi">20</span>
+</pre></div>
+</div>
+<dl class="py function">
+<dt id="nivel_1.sum_multiplication.multiplication">
+<code class="sig-prename descclassname">nivel_1.sum_multiplication.</code><code class="sig-name descname">multiplication</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)">int</a></span></em>, <em class="sig-param"><span class="n">b</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)">int</a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)">int</a><a class="reference internal" href="../_modules/nivel_1/sum_multiplication.html#multiplication"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#nivel_1.sum_multiplication.multiplication" title="Permalink to this definition">¶</a></dt>
+<dd><p>Solicita dos números al usuario y los multiplica.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – Primer número para multiplicar</p></li>
+<li><p><strong>b</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – Segundo número para multiplicar</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="nivel_1.sum_multiplication.sum">
+<code class="sig-prename descclassname">nivel_1.sum_multiplication.</code><code class="sig-name descname">sum</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)">int</a></span></em>, <em class="sig-param"><span class="n">b</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)">int</a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)">int</a><a class="reference internal" href="../_modules/nivel_1/sum_multiplication.html#sum"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#nivel_1.sum_multiplication.sum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Solicita dos números al usuario y los suma.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – Primer número para sumar</p></li>
+<li><p><strong>b</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – Segundo número para sumar</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)">int</a></p>
+</dd>
+</dl>
 </dd></dl>
 
 </div>
