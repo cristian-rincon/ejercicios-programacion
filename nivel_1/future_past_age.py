@@ -39,8 +39,8 @@ Reto #7 "Edad futura y pasada"
 
 """
 
-from .substraction import substraction
-from .sum_multiplication import sum
+from .substraction import substraction # En pruebas locales es necesario quitar el punto, para documentación se debe dejar
+from .sum_multiplication import sum # En pruebas locales es necesario quitar el punto, para documentación se debe dejar
 
 
 if __name__ == "__main__":
