@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>nivel_1.sum_int &mdash; Ejercicios de programacion 1.0 documentation</title>
+  <title>level_1.challenge_1 &mdash; Ejercicios de programacion 1.0 documentation</title>
   
 
   
@@ -83,6 +83,7 @@
               <p class="caption"><span class="caption-text">Contenidos:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../modules/nivel_1.html">Ejercicios de programación - Nivel 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/nivel_2.html">Ejercicios de programación - Nivel 2</a></li>
 </ul>
 
             
@@ -131,7 +132,7 @@
         
           <li><a href="../index.html">Module code</a> &raquo;</li>
         
-      <li>nivel_1.sum_int</li>
+      <li>level_1.challenge_1</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -146,38 +147,50 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <h1>Source code for nivel_1.sum_int</h1><div class="highlight"><pre>
+  <h1>Source code for level_1.challenge_1</h1><div class="highlight"><pre>
 <span></span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">Reto #4 &quot;Suma de enteros&quot;</span>
-<span class="sd">=============================</span>
+<span class="sd">Reto #1 “Hola Mundo”</span>
+<span class="sd">====================</span>
 
-<span class="sd">.. note::</span>
-
-<span class="sd">    Instrucciones: otro clásico conocido, donde pedirás</span>
-<span class="sd">    al usuario que ingrese 2 números y muestre en pantalla</span>
-<span class="sd">    el resultado. Si quieres añadir más dificultad puedes</span>
-<span class="sd">    utilizar números con punto decimal y especificar el</span>
-<span class="sd">    número de decimales después del punto.</span>
-
-<span class="sd">    Ejemplo: 2.5633 + 5.6883 = 8.25</span>
-
+<span class="sd">.. note::  </span>
+<span class="sd">    </span>
+<span class="sd">    Instrucciones: este es un clásico de clásicos, </span>
+<span class="sd">    pero haremos un pequeño cambio. En lugar de </span>
+<span class="sd">    solo imprimir un mensaje en pantalla, pedirás </span>
+<span class="sd">    al usuario que digite un nombre y mostrarás </span>
+<span class="sd">    en pantalla lo siguiente: &quot;Hola, [nombre]&quot;</span>
 <span class="sd">&quot;&quot;&quot;</span>
 
 
-<div class="viewcode-block" id="sum_int"><a class="viewcode-back" href="../../modules/nivel_1.html#nivel_1.sum_int.sum_int">[docs]</a><span class="k">def</span> <span class="nf">sum_int</span><span class="p">():</span>
-    <span class="sd">&quot;&quot;&quot;Solicita dos números alusuario,</span>
-<span class="sd">    posteriormente suma los números e imprime</span>
-<span class="sd">    el resultado en pantalla.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">num1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingresa el primer número: &quot;</span><span class="p">))</span>
-    <span class="n">num2</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingresa el segundo número: &quot;</span><span class="p">))</span>
+<div class="viewcode-block" id="hello1"><a class="viewcode-back" href="../../modules/nivel_1.html#level_1.challenge_1.hello1">[docs]</a><span class="k">def</span> <span class="nf">hello1</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Solicita el nombre del usuario y posteriormente </span>
+<span class="sd">    imprime un saludo personalizado.</span>
 
-    <span class="n">helper_text</span> <span class="o">=</span> <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;El resultado de sumar </span><span class="si">{</span><span class="n">num1</span><span class="si">}</span><span class="s1"> + </span><span class="si">{</span><span class="n">num2</span><span class="si">}</span><span class="s1"> es:&#39;</span><span class="p">)</span>
-    <span class="n">sum_int</span> <span class="o">=</span> <span class="nb">print</span><span class="p">(</span><span class="n">num1</span> <span class="o">+</span> <span class="n">num2</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">sum_int</span></div>
+<span class="sd">    :rtype: str </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingresa tu nombre: &quot;</span><span class="p">)</span>
+
+    <span class="k">while</span> <span class="n">name</span> <span class="o">!=</span> <span class="s2">&quot;&quot;</span><span class="p">:</span>
+        <span class="n">greeting</span> <span class="o">=</span> <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Hola, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">greeting</span>
+
+    <span class="n">warning</span> <span class="o">=</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El nombre no debe estar vacío&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="hello2"><a class="viewcode-back" href="../../modules/nivel_1.html#level_1.challenge_1.hello2">[docs]</a><span class="k">def</span> <span class="nf">hello2</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Solicita el nombre y apellido del usuario,</span>
+<span class="sd">    posteriormente imprime un saludo personalizado.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingresa tu nombre: &quot;</span><span class="p">)</span>
+    <span class="n">lastname</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingresa tu apellido: &quot;</span><span class="p">)</span>
+
+    <span class="k">while</span> <span class="n">name</span> <span class="ow">or</span> <span class="n">lastname</span> <span class="o">!=</span> <span class="s2">&quot;&quot;</span><span class="p">:</span>
+        <span class="n">greeting</span> <span class="o">=</span> <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Hola, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">lastname</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">greeting</span>
+
+    <span class="n">warning</span> <span class="o">=</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El nombre no debe estar vacío&quot;</span><span class="p">)</span></div>
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
-    <span class="n">sum_int</span><span class="p">()</span>
+    <span class="n">hello1</span><span class="p">()</span>
 </pre></div>
 
            </div>

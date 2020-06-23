@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>nivel_1.multiline_message &mdash; Ejercicios de programacion 1.0 documentation</title>
+  <title>level_1.challenge_10 &mdash; Ejercicios de programacion 1.0 documentation</title>
   
 
   
@@ -83,6 +83,7 @@
               <p class="caption"><span class="caption-text">Contenidos:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../modules/nivel_1.html">Ejercicios de programación - Nivel 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/nivel_2.html">Ejercicios de programación - Nivel 2</a></li>
 </ul>
 
             
@@ -131,7 +132,7 @@
         
           <li><a href="../index.html">Module code</a> &raquo;</li>
         
-      <li>nivel_1.multiline_message</li>
+      <li>level_1.challenge_10</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -146,51 +147,45 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <h1>Source code for nivel_1.multiline_message</h1><div class="highlight"><pre>
+  <h1>Source code for level_1.challenge_10</h1><div class="highlight"><pre>
 <span></span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">Reto #3 &quot;Mensaje multilínea&quot;</span>
-<span class="sd">=============================</span>
+<span class="sd">Reto #10 “Conversor de millas”</span>
+<span class="sd">===============================</span>
 
-<span class="sd">.. note::  </span>
-<span class="sd">    </span>
-<span class="sd">    Instrucciones: seguro has visto que en Platzi </span>
-<span class="sd">    hay más de 600 cursos ¿puedes mostrar a que </span>
-<span class="sd">    categorías corresponden en una sola línea de código?</span>
-<span class="sd">    Debe mostrarse así:</span>
-
-<span class="sd">.. code-block:: python</span>
-
-<span class="sd">    Platzi cuenta con cursos de:</span>
-<span class="sd">    [categoría1]</span>
-<span class="sd">    [categoría2]</span>
-<span class="sd">    [categoría3]</span>
-<span class="sd">    [categoría4]</span>
-<span class="sd">    [categoría5]</span>
-<span class="sd">    [categoría6]</span>
+<span class="sd">Instrucciones: hay 1.609344 km en una milla (mi). </span>
+<span class="sd">Escribe un programa en el que el usuario indique </span>
+<span class="sd">una cantidad de millas y muestre en pantalla el </span>
+<span class="sd">resultado convertido a kilómetros.</span>
 
 <span class="sd">&quot;&quot;&quot;</span>
 
 
-<div class="viewcode-block" id="multiline_message"><a class="viewcode-back" href="../../modules/nivel_1.html#nivel_1.multiline_message.multiline_message">[docs]</a><span class="k">def</span> <span class="nf">multiline_message</span><span class="p">():</span>
-    <span class="sd">&quot;&quot;&quot;Toma las categorías desde una lista y las imprime</span>
-<span class="sd">    en pantalla al usuario final</span>
+<div class="viewcode-block" id="miles_converter"><a class="viewcode-back" href="../../modules/nivel_1.html#level_1.challenge_10.miles_converter">[docs]</a><span class="k">def</span> <span class="nf">miles_converter</span><span class="p">(</span><span class="n">miles</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Calcula la equivalencia de millas en kilómetros.</span>
+
+<span class="sd">    :type miles: float</span>
+<span class="sd">    :param miles: Número de millas a convertir.</span>
+
+<span class="sd">    :rtype: float</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-    <span class="n">categories</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Desarrollo e Ingeniería&#39;</span><span class="p">,</span>
-                  <span class="s1">&#39;Diseño y Ux&#39;</span><span class="p">,</span>
-                  <span class="s1">&#39;Marketing&#39;</span><span class="p">,</span>
-                  <span class="s1">&#39;Negocios y Emprendimiento&#39;</span><span class="p">,</span>
-                  <span class="s1">&#39;Producción Audiovisual&#39;</span><span class="p">,</span>
-                  <span class="s1">&#39;Crecimiento Profesional&#39;</span>
-                  <span class="p">]</span>
+    <span class="n">km</span> <span class="o">=</span> <span class="mf">1.609344</span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Platzi cuenta con cursos de:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">category</span> <span class="ow">in</span> <span class="n">categories</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;- </span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">km</span> <span class="o">*</span> <span class="n">miles</span>
 
+    <span class="k">return</span> <span class="n">result</span></div>
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
-    <span class="n">multiline_message</span><span class="p">()</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Convertidor de millas a kilómetros&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;==================================&quot;</span><span class="p">)</span>
+    <span class="n">miles</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;&gt;&gt;&gt; Ingresa la cantidad de millas a convertir: &quot;</span><span class="p">))</span>
+
+    <span class="n">result</span> <span class="o">=</span> <span class="n">miles_converter</span><span class="p">(</span><span class="n">miles</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;&gt;&gt;&gt; </span><span class="si">{</span><span class="n">miles</span><span class="si">}</span><span class="s2"> millas equivalen a </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2"> kilómetros.&quot;</span><span class="p">)</span>
+
+    
 </pre></div>
 
            </div>
