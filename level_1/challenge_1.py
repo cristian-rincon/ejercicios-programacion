@@ -12,7 +12,7 @@ Reto #1 “Hola Mundo”
 """
 
 
-def helloworld():
+def hello1():
     """Solicita el nombre del usuario y posteriormente 
     imprime un saludo personalizado.
 
@@ -40,4 +40,4 @@ def hello2():
     warning = print("El nombre no debe estar vacío")
 
 if __name__ == "__main__":
-    helloworld()
+    hello1()

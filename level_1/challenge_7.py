@@ -12,8 +12,8 @@ Reto #7 "Edad futura y pasada"
 
 .. code-block::
 
-    from .substraction import substraction
-    from .sum_multiplication import sum
+    from .challenge_6 import challenge_6
+    from .challenge_5 import sum
 
 
     if __name__ == "__main__":
@@ -28,7 +28,7 @@ Reto #7 "Edad futura y pasada"
         name = input('¿Cómo te llamas? ')
         actual_age = int(input("¿Cuantos años tienes? "))
         num2 = 1
-        last_year_age = substraction(actual_age, num2)
+        last_year_age = challenge_6(actual_age, num2)
         next_year_age = sum(actual_age, num2)
 
         if name != "":
@@ -39,8 +39,8 @@ Reto #7 "Edad futura y pasada"
 
 """
 
-from .substraction import substraction # En pruebas locales es necesario quitar el punto, para documentación se debe dejar
-from .sum_multiplication import sum # En pruebas locales es necesario quitar el punto, para documentación se debe dejar
+from .challenge_6 import substraction # En pruebas locales es necesario quitar el punto, para documentación se debe dejar
+from .challenge_5 import sum # En pruebas locales es necesario quitar el punto, para documentación se debe dejar
 
 
 if __name__ == "__main__":
@@ -56,7 +56,7 @@ if __name__ == "__main__":
     name = input('¿Cómo te llamas? ')
     actual_age = int(input("¿Cuantos años tienes? "))
     num2 = 1
-    last_year_age = substraction(actual_age, num2)
+    last_year_age = challenge_6(actual_age, num2)
     next_year_age = sum(actual_age, num2)
 
     if name != "":

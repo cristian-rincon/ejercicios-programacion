@@ -3,52 +3,47 @@ Ejercicios de programación - Nivel 1
 .. toctree::
      :maxdepth: 4
 
-.. automodule:: nivel_1.helloworld
+.. automodule:: level_1.challenge_1
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: nivel_1.helloworld_2
+.. automodule:: level_1.challenge_2
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: nivel_1.multiline_message
+.. automodule:: level_1.challenge_3
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: nivel_1.sum_int
+.. automodule:: level_1.challenge_4
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: nivel_1.sum_multiplication
+.. automodule:: level_1.challenge_5
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: nivel_1.substraction
+.. automodule:: level_1.challenge_6
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: nivel_1.future_past_age
+.. automodule:: level_1.challenge_7
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: nivel_1.divide
+.. automodule:: level_1.challenge_9
    :members:
    :undoc-members:
    :show-inheritance:
 
-.. automodule:: nivel_1.calculate_days
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-.. automodule:: nivel_1.miles_converter
+.. automodule:: level_1.challenge_10
    :members:
    :undoc-members:
    :show-inheritance:
