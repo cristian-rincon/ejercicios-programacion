@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>level_1.challenge_10 &mdash; Ejercicios de programacion 1.0 documentation</title>
+  <title>level_2.challenge_4 &mdash; Ejercicios de programacion 1.0 documentation</title>
   
 
   
@@ -132,7 +132,7 @@
         
           <li><a href="../index.html">Module code</a> &raquo;</li>
         
-      <li>level_1.challenge_10</li>
+      <li>level_2.challenge_4</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -147,46 +147,44 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <h1>Source code for level_1.challenge_10</h1><div class="highlight"><pre>
+  <h1>Source code for level_2.challenge_4</h1><div class="highlight"><pre>
 <span></span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">Reto #10 “Conversor de millas”</span>
-<span class="sd">===============================</span>
+<span class="sd">Reto #4 - I like turtles</span>
+<span class="sd">============================</span>
 
 <span class="sd">.. note::</span>
 
-<span class="sd">    Instrucciones: hay 1.609344 km en una milla (mi). </span>
-<span class="sd">    Escribe un programa en el que el usuario indique </span>
-<span class="sd">    una cantidad de millas y muestre en pantalla el </span>
-<span class="sd">    resultado convertido a kilómetros.</span>
-
+<span class="sd">    Escribe un programa que pida al usuario ingrese su animal favorito, </span>
+<span class="sd">    si coloca ‘Tortuga’, ‘tortuga’, ‘TORTUGA’ o cualquier otra variante </span>
+<span class="sd">    de la palabra entonces mostrar en pantalla “También me gustan las tortugas”. </span>
+<span class="sd">    En caso contrario mostrar el mensaje “Ese animal es genial, pero prefiero las tortugas”.</span>
 <span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">re</span>
 
 
-<div class="viewcode-block" id="miles_converter"><a class="viewcode-back" href="../../modules/nivel_1.html#level_1.challenge_10.miles_converter">[docs]</a><span class="k">def</span> <span class="nf">miles_converter</span><span class="p">(</span><span class="n">miles</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Calcula la equivalencia de millas en kilómetros.</span>
+<div class="viewcode-block" id="like_turtles"><a class="viewcode-back" href="../../modules/nivel_2.html#level_2.challenge_4.like_turtles">[docs]</a><span class="k">def</span> <span class="nf">like_turtles</span><span class="p">(</span><span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Recibe un nombre de un animal, convierte la cadena de texto a minúsculas</span>
+<span class="sd">    y a través de la librería re valida si coincide con el texto dado. De acuerdo</span>
+<span class="sd">    con la coincidencia envía un mensaje personalizado.</span>
 
-<span class="sd">    :type miles: float</span>
-<span class="sd">    :param miles: Número de millas a convertir.</span>
-
-<span class="sd">    :rtype: float</span>
+<span class="sd">    :type text: str</span>
+<span class="sd">    :param text: Cadena de texto solicitada al usuario</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-    <span class="n">km</span> <span class="o">=</span> <span class="mf">1.609344</span>
+    <span class="n">text_lower</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s2">&quot;tortuga&quot;</span><span class="p">,</span> <span class="n">text_lower</span><span class="p">)</span>
 
-    <span class="n">result</span> <span class="o">=</span> <span class="n">km</span> <span class="o">*</span> <span class="n">miles</span>
-
-    <span class="k">return</span> <span class="n">result</span></div>
+    <span class="k">if</span> <span class="n">x</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;También me gustan las tortugas.&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Ese animal es genial, pero prefiero las tortugas.&quot;</span><span class="p">)</span></div>
 
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Convertidor de millas a kilómetros&quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;==================================&quot;</span><span class="p">)</span>
-    <span class="n">miles</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;&gt;&gt;&gt; Ingresa la cantidad de millas a convertir: &quot;</span><span class="p">))</span>
+    <span class="n">ask_animal</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;¿Cual es tu animal favorito? &quot;</span><span class="p">)</span>
 
-    <span class="n">result</span> <span class="o">=</span> <span class="n">miles_converter</span><span class="p">(</span><span class="n">miles</span><span class="p">)</span>
-
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;&gt;&gt;&gt; </span><span class="si">{</span><span class="n">miles</span><span class="si">}</span><span class="s2"> millas equivalen a </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2"> kilómetros.&quot;</span><span class="p">)</span>
+    <span class="n">like_turtles</span><span class="p">(</span><span class="n">ask_animal</span><span class="p">)</span>
 </pre></div>
 
            </div>

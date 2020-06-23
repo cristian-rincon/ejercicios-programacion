@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>level_1.challenge_10 &mdash; Ejercicios de programacion 1.0 documentation</title>
+  <title>level_2.challenge_3 &mdash; Ejercicios de programacion 1.0 documentation</title>
   
 
   
@@ -132,7 +132,7 @@
         
           <li><a href="../index.html">Module code</a> &raquo;</li>
         
-      <li>level_1.challenge_10</li>
+      <li>level_2.challenge_3</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -147,46 +147,51 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <h1>Source code for level_1.challenge_10</h1><div class="highlight"><pre>
+  <h1>Source code for level_2.challenge_3</h1><div class="highlight"><pre>
 <span></span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">Reto #10 “Conversor de millas”</span>
-<span class="sd">===============================</span>
+<span class="sd">Reto #3 - Rangos cambiantes.</span>
+<span class="sd">============================</span>
 
 <span class="sd">.. note::</span>
 
-<span class="sd">    Instrucciones: hay 1.609344 km en una milla (mi). </span>
-<span class="sd">    Escribe un programa en el que el usuario indique </span>
-<span class="sd">    una cantidad de millas y muestre en pantalla el </span>
-<span class="sd">    resultado convertido a kilómetros.</span>
-
+<span class="sd">    Nuevamente pide a tu usuario que indique 3 números: un límite superior, </span>
+<span class="sd">    un límite inferior y uno de comparación. Si el número de comparación se </span>
+<span class="sd">    encuentra entre los 2 primeros, comunicarlo en pantalla. En caso estar </span>
+<span class="sd">    por debajo del límite inferior o por arriba del límite superior, también </span>
+<span class="sd">    mostrarlo en pantalla.</span>
 <span class="sd">&quot;&quot;&quot;</span>
 
 
-<div class="viewcode-block" id="miles_converter"><a class="viewcode-back" href="../../modules/nivel_1.html#level_1.challenge_10.miles_converter">[docs]</a><span class="k">def</span> <span class="nf">miles_converter</span><span class="p">(</span><span class="n">miles</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Calcula la equivalencia de millas en kilómetros.</span>
+<div class="viewcode-block" id="in_range_number"><a class="viewcode-back" href="../../modules/nivel_2.html#level_2.challenge_3.in_range_number">[docs]</a><span class="k">def</span> <span class="nf">in_range_number</span><span class="p">(</span><span class="n">num1</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">num2</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">num3</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Recibe tres números, el primero será el límite superior, el segundo será el</span>
+<span class="sd">    límite inferior y el tercero es el número a comparar.</span>
 
-<span class="sd">    :type miles: float</span>
-<span class="sd">    :param miles: Número de millas a convertir.</span>
+<span class="sd">    :type num1: int</span>
+<span class="sd">    :param num1: Límite superior</span>
 
-<span class="sd">    :rtype: float</span>
+<span class="sd">    :type num2: int</span>
+<span class="sd">    :param num2: Límite inferior.</span>
+
+<span class="sd">    :type num3: int</span>
+<span class="sd">    :param num3: Número a comparar.</span>
+
+<span class="sd">    :rtype: int</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-    <span class="n">km</span> <span class="o">=</span> <span class="mf">1.609344</span>
-
-    <span class="n">result</span> <span class="o">=</span> <span class="n">km</span> <span class="o">*</span> <span class="n">miles</span>
-
-    <span class="k">return</span> <span class="n">result</span></div>
+    <span class="k">if</span> <span class="n">num1</span> <span class="o">&gt;</span> <span class="n">num3</span> <span class="ow">and</span> <span class="n">num2</span> <span class="o">&lt;</span> <span class="n">num3</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span>
+            <span class="sa">f</span><span class="s2">&quot;&gt;&gt;&gt; El número </span><span class="si">{</span><span class="n">num3</span><span class="si">}</span><span class="s2"> se encuentra bajo el rango máximo y también se encuentra por encima del rango mínimo.&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;&gt;&gt;&gt; El número </span><span class="si">{</span><span class="n">num3</span><span class="si">}</span><span class="s2"> excede el límite permitido.&quot;</span><span class="p">)</span></div>
 
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Convertidor de millas a kilómetros&quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;==================================&quot;</span><span class="p">)</span>
-    <span class="n">miles</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;&gt;&gt;&gt; Ingresa la cantidad de millas a convertir: &quot;</span><span class="p">))</span>
+    <span class="n">num1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingresa el límite superior: &quot;</span><span class="p">))</span>
+    <span class="n">num2</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingresa el límite inferior: &quot;</span><span class="p">))</span>
+    <span class="n">num3</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingresa el número a comparar: &quot;</span><span class="p">))</span>
 
-    <span class="n">result</span> <span class="o">=</span> <span class="n">miles_converter</span><span class="p">(</span><span class="n">miles</span><span class="p">)</span>
-
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;&gt;&gt;&gt; </span><span class="si">{</span><span class="n">miles</span><span class="si">}</span><span class="s2"> millas equivalen a </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2"> kilómetros.&quot;</span><span class="p">)</span>
+    <span class="n">in_range_number</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">,</span> <span class="n">num3</span><span class="p">)</span>
 </pre></div>
 
            </div>

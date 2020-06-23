@@ -87,6 +87,9 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Ejercicios de programación - Nivel 2</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#reto-1-numero-mayor-y-menor">Reto #1 - Número mayor y menor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#reto-2-en-el-rango-por-favor">Reto #2 - En el rango, por favor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reto-3-rangos-cambiantes">Reto #3 - Rangos cambiantes.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reto-4-i-like-turtles">Reto #4 - I like turtles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reto-5-como-esta-el-clima">Reto #5 - ¿Cómo está el clima?</a></li>
 </ul>
 </li>
 </ul>
@@ -160,10 +163,13 @@
 </div>
 <span class="target" id="module-level_2.challenge_1"></span><div class="section" id="reto-1-numero-mayor-y-menor">
 <h2>Reto #1 - Número mayor y menor<a class="headerlink" href="#reto-1-numero-mayor-y-menor" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>Escribe un programa que pida al usuario 2 números, mostrando como 
 salida cuál es el número mayor y la diferencia de uno respecto al 
 otro. En caso de que los números sean iguales, mostrarlo también 
 en pantalla.</p>
+</div>
 <dl class="py function">
 <dt id="level_2.challenge_1.min_maj_number">
 <code class="sig-prename descclassname">level_2.challenge_1.</code><code class="sig-name descname">min_maj_number</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">num1</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)">int</a></span></em>, <em class="sig-param"><span class="n">num2</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)">int</a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)">int</a><a class="reference internal" href="../_modules/level_2/challenge_1.html#min_maj_number"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#level_2.challenge_1.min_maj_number" title="Permalink to this definition">¶</a></dt>
@@ -186,11 +192,14 @@ usuario.</p>
 </div>
 <span class="target" id="module-level_2.challenge_2"></span><div class="section" id="reto-2-en-el-rango-por-favor">
 <h2>Reto #2 - En el rango, por favor<a class="headerlink" href="#reto-2-en-el-rango-por-favor" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>Pide al usuario que indique 2 números: uno que servirá como 
 límite y otro para comparar. Si el segundo número es menor 
 al primero, mostrarás un mensaje diciendo “El número ‘x’ se 
 encuentra en el rango, gracias” y en caso contrario dirá 
 “El número ‘x’ excede el límite permitido”.</p>
+</div>
 <dl class="py function">
 <dt id="level_2.challenge_2.in_range_number">
 <code class="sig-prename descclassname">level_2.challenge_2.</code><code class="sig-name descname">in_range_number</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">num1</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)">int</a></span></em>, <em class="sig-param"><span class="n">num2</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)">int</a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)">int</a><a class="reference internal" href="../_modules/level_2/challenge_2.html#in_range_number"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#level_2.challenge_2.in_range_number" title="Permalink to this definition">¶</a></dt>
@@ -207,6 +216,98 @@ número a comparar.</p>
 <dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)">int</a></p>
 </dd>
 </dl>
+</dd></dl>
+
+</div>
+<span class="target" id="module-level_2.challenge_3"></span><div class="section" id="reto-3-rangos-cambiantes">
+<h2>Reto #3 - Rangos cambiantes.<a class="headerlink" href="#reto-3-rangos-cambiantes" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Nuevamente pide a tu usuario que indique 3 números: un límite superior, 
+un límite inferior y uno de comparación. Si el número de comparación se 
+encuentra entre los 2 primeros, comunicarlo en pantalla. En caso estar 
+por debajo del límite inferior o por arriba del límite superior, también 
+mostrarlo en pantalla.</p>
+</div>
+<dl class="py function">
+<dt id="level_2.challenge_3.in_range_number">
+<code class="sig-prename descclassname">level_2.challenge_3.</code><code class="sig-name descname">in_range_number</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">num1</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)">int</a></span></em>, <em class="sig-param"><span class="n">num2</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)">int</a></span></em>, <em class="sig-param"><span class="n">num3</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)">int</a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)">int</a><a class="reference internal" href="../_modules/level_2/challenge_3.html#in_range_number"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#level_2.challenge_3.in_range_number" title="Permalink to this definition">¶</a></dt>
+<dd><p>Recibe tres números, el primero será el límite superior, el segundo será el
+límite inferior y el tercero es el número a comparar.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num1</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – Límite superior</p></li>
+<li><p><strong>num2</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – Límite inferior.</p></li>
+<li><p><strong>num3</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – Número a comparar.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)">int</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<span class="target" id="module-level_2.challenge_4"></span><div class="section" id="reto-4-i-like-turtles">
+<h2>Reto #4 - I like turtles<a class="headerlink" href="#reto-4-i-like-turtles" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Escribe un programa que pida al usuario ingrese su animal favorito, 
+si coloca ‘Tortuga’, ‘tortuga’, ‘TORTUGA’ o cualquier otra variante 
+de la palabra entonces mostrar en pantalla “También me gustan las tortugas”. 
+En caso contrario mostrar el mensaje “Ese animal es genial, pero prefiero las tortugas”.</p>
+</div>
+<dl class="py function">
+<dt id="level_2.challenge_4.like_turtles">
+<code class="sig-prename descclassname">level_2.challenge_4.</code><code class="sig-name descname">like_turtles</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)">str</a></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/level_2/challenge_4.html#like_turtles"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#level_2.challenge_4.like_turtles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Recibe un nombre de un animal, convierte la cadena de texto a minúsculas
+y a través de la librería re valida si coincide con el texto dado. De acuerdo
+con la coincidencia envía un mensaje personalizado.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>text</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – Cadena de texto solicitada al usuario</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<span class="target" id="module-level_2.challenge_5"></span><div class="section" id="reto-5-como-esta-el-clima">
+<h2>Reto #5 - ¿Cómo está el clima?<a class="headerlink" href="#reto-5-como-esta-el-clima" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Crea un programa que pregunte al usuario si está lloviendo, en caso de responder 
+“sí” pregunta si está haciendo mucho viento y si responde “sí” nuevamente muestra 
+un mensaje indicando que hace mucho viento para salir con una sombrilla. En caso 
+contrario, anima al usuario a que lleve una sombrilla. Para el caso de responder 
+“no” en la primer pregunta, entonces solo desea un bonito día.</p>
+<p>Considera que las respuestas pueden pasarse a minúsculas para evitar posibles errores.</p>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;¿Está lloviendo?&quot;</span><span class="p">)</span>
+
+<span class="n">options</span><span class="p">()</span>
+<span class="n">command</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+<span class="n">command</span> <span class="o">=</span> <span class="n">command</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+
+<span class="k">if</span> <span class="n">command</span> <span class="o">==</span> <span class="s2">&quot;S&quot;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;¿Hay mucho viento?&quot;</span><span class="p">)</span>
+    <span class="n">options</span><span class="p">()</span>
+    <span class="n">command</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="n">command</span> <span class="o">=</span> <span class="n">command</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">command</span> <span class="o">==</span> <span class="s2">&quot;S&quot;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Es mejor que te quedes en casa.&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Recuerda llevar tu sombrilla.&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Que tengas un buen día.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="py function">
+<dt id="level_2.challenge_5.options">
+<code class="sig-prename descclassname">level_2.challenge_5.</code><code class="sig-name descname">options</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/level_2/challenge_5.html#options"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#level_2.challenge_5.options" title="Permalink to this definition">¶</a></dt>
+<dd><p>Imprime dos opciones en pantalla. Si o No</p>
 </dd></dl>
 
 </div>
