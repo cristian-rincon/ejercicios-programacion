@@ -92,6 +92,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#reto-6-resta-de-pizzas">Reto #6 “Resta de pizzas”</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#reto-7-edad-futura-y-pasada">Reto #7 “Edad futura y pasada”</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#reto-8-divide-la-cuenta">Reto #8 “Divide la cuenta”</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reto-9-calculando-dias">Reto #9 “Calculando días”</a></li>
 </ul>
 </li>
 </ul>
@@ -397,6 +398,36 @@ más impuestos y el total a pagar por cada persona.</p>
 </dl>
 </dd></dl>
 
+</div>
+<span class="target" id="module-nivel_1.calculate_days"></span><div class="section" id="reto-9-calculando-dias">
+<h2>Reto #9 “Calculando días”<a class="headerlink" href="#reto-9-calculando-dias" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Instrucciones: escribe un programa al que le indiques una cantidad de 
+días y como resultado deberá mostrar cuantas horas, minutos y segundos 
+hay en dicha cantidad de días.</p>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+
+    <span class="n">helper_text</span> <span class="o">=</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span>
+    <span class="n">Calculando</span> <span class="n">días</span>
+    <span class="o">===============================================</span>
+    <span class="n">Este</span> <span class="n">programa</span> <span class="n">te</span> <span class="n">permitirá</span> <span class="n">saber</span> <span class="n">cuantas</span> <span class="n">horas</span><span class="p">,</span>
+    <span class="n">minutos</span> <span class="n">y</span> <span class="n">segundos</span> <span class="n">hay</span> <span class="n">en</span> <span class="n">una</span> <span class="n">cantidad</span> <span class="n">de</span> <span class="n">días</span> 
+    <span class="n">dados</span><span class="o">.</span>
+    <span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+    <span class="n">days</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;&gt;&gt;&gt; Indica la cantidad de días a calcular: &quot;</span><span class="p">))</span>
+
+    <span class="n">minutes</span> <span class="o">=</span> <span class="p">(</span><span class="mi">60</span> <span class="o">*</span> <span class="mi">24</span><span class="p">)</span> <span class="o">*</span> <span class="n">days</span>
+
+    <span class="n">seconds</span> <span class="o">=</span> <span class="mi">60</span> <span class="o">*</span> <span class="n">minutes</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;&gt;&gt;&gt; En </span><span class="si">{</span><span class="n">days</span><span class="si">}</span><span class="s2"> días hay:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;&gt;&gt;&gt; </span><span class="si">{</span><span class="n">minutes</span><span class="si">}</span><span class="s2"> minutos.&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;&gt;&gt;&gt; </span><span class="si">{</span><span class="n">seconds</span><span class="si">}</span><span class="s2"> segundos.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
 </div>
 </div>
 
