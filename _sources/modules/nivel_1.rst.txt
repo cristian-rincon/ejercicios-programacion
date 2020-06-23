@@ -47,3 +47,8 @@ Ejercicios de programación - Nivel 1
    :members:
    :undoc-members:
    :show-inheritance:
+
+.. automodule:: nivel_1.miles_converter
+   :members:
+   :undoc-members:
+   :show-inheritance:
