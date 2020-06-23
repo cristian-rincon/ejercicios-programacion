@@ -1,6 +1,8 @@
 """
-    Reto #2 - En el rango, por favor
-    =================================
+Reto #2 - En el rango, por favor
+=================================
+
+.. note::
 
     Pide al usuario que indique 2 números: uno que servirá como 
     límite y otro para comparar. Si el segundo número es menor 

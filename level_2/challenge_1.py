@@ -1,6 +1,8 @@
 """
-    Reto #1 - Número mayor y menor
-    ===============================
+Reto #1 - Número mayor y menor
+===============================
+
+.. note::
 
     Escribe un programa que pida al usuario 2 números, mostrando como 
     salida cuál es el número mayor y la diferencia de uno respecto al 

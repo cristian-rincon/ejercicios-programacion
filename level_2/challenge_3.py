@@ -1,6 +1,8 @@
 """
-    Reto #3 - Rangos cambiantes.
-    ============================
+Reto #3 - Rangos cambiantes.
+============================
+
+.. note::
 
     Nuevamente pide a tu usuario que indique 3 números: un límite superior, 
     un límite inferior y uno de comparación. Si el número de comparación se 
