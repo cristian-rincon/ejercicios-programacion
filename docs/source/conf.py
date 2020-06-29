@@ -55,6 +55,15 @@ exclude_patterns = []
 #
 html_theme = 'sphinx_rtd_theme'
 
+html_context = {
+    'github_user':'cristian-rincon',
+    'github_repo':'ejercicios-programacion',
+    'github_version': 'master/',
+    'display_github': True,
+    'conf_py_path': 'docs/source/',
+    'source_suffix': '.rst',
+}
+
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
