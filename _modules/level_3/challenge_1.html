@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>level_1.challenge_3 &mdash; Ejercicios de programacion 1.0 documentation</title>
+  <title>level_3.challenge_1 &mdash; Ejercicios de programacion 1.0 documentation</title>
   
 
   
@@ -133,7 +133,7 @@
         
           <li><a href="../index.html">Module code</a> &raquo;</li>
         
-      <li>level_1.challenge_3</li>
+      <li>level_3.challenge_1</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -148,51 +148,34 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <h1>Source code for level_1.challenge_3</h1><div class="highlight"><pre>
+  <h1>Source code for level_3.challenge_1</h1><div class="highlight"><pre>
 <span></span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">Reto #3 &quot;Mensaje multilínea&quot;</span>
-<span class="sd">=============================</span>
+<span class="sd">Reto #1 - Longitud del string</span>
+<span class="sd">===============================</span>
 
-<span class="sd">.. note::  </span>
-<span class="sd">    </span>
-<span class="sd">    Instrucciones: seguro has visto que en Platzi </span>
-<span class="sd">    hay más de 600 cursos ¿puedes mostrar a que </span>
-<span class="sd">    categorías corresponden en una sola línea de código?</span>
-<span class="sd">    Debe mostrarse así:</span>
+<span class="sd">.. note::</span>
 
-<span class="sd">.. code-block:: python</span>
-
-<span class="sd">    Platzi cuenta con cursos de:</span>
-<span class="sd">    [categoría1]</span>
-<span class="sd">    [categoría2]</span>
-<span class="sd">    [categoría3]</span>
-<span class="sd">    [categoría4]</span>
-<span class="sd">    [categoría5]</span>
-<span class="sd">    [categoría6]</span>
-
+<span class="sd">    Pide a tu usuario que ingrese el nombre de su curso favorito, </span>
+<span class="sd">    obtén la longitud de ese string y muéstralo en pantalla.</span>
 <span class="sd">&quot;&quot;&quot;</span>
 
+<div class="viewcode-block" id="favourite_course"><a class="viewcode-back" href="../../modules/nivel_3.html#level_3.challenge_1.favourite_course">[docs]</a><span class="k">def</span> <span class="nf">favourite_course</span><span class="p">(</span><span class="n">fav_course</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Recibe el nombre del curso favorito del usuario</span>
+<span class="sd">    y retorna el tamaño de ese string.</span>
 
-<div class="viewcode-block" id="multiline_message"><a class="viewcode-back" href="../../modules/nivel_1.html#level_1.challenge_3.multiline_message">[docs]</a><span class="k">def</span> <span class="nf">multiline_message</span><span class="p">():</span>
-    <span class="sd">&quot;&quot;&quot;Toma las categorías desde una lista y las imprime en pantalla al usuario</span>
-<span class="sd">    final.&quot;&quot;&quot;</span>
+<span class="sd">    :type fav_course: str</span>
+<span class="sd">    :param fav_course: Nombre del curso favorito del usuario.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
 
-    <span class="n">categories</span> <span class="o">=</span> <span class="p">[</span>
-        <span class="s2">&quot;Desarrollo e Ingeniería&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;Diseño y Ux&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;Marketing&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;Negocios y Emprendimiento&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;Producción Audiovisual&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;Crecimiento Profesional&quot;</span><span class="p">,</span>
-    <span class="p">]</span>
-
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Platzi cuenta con cursos de:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">category</span> <span class="ow">in</span> <span class="n">categories</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;- </span><span class="si">{</span><span class="n">category</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span></div>
+    <span class="n">len_fav_course</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">fav_course</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">len_fav_course</span></div>
 
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
-    <span class="n">multiline_message</span><span class="p">()</span>
+    <span class="n">fav_course</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Nombra tu curso favorito de platzi: &quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Genial, Tu curso favorito es </span><span class="si">{</span><span class="n">fav_course</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">favourite_course</span><span class="p">(</span><span class="n">fav_course</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;El nombre del curso tiene una longiud de </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2"> caracteres.&quot;</span><span class="p">)</span>
 </pre></div>
 
            </div>
