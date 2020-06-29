@@ -13,6 +13,7 @@ Reto #6 - Edad permitida
 
 """
 
+
 def allowed_age(age: int) -> str:
     """Solicita la edad y dependiendo de la misma emite un mensaje personalizado.
 
@@ -21,7 +22,7 @@ def allowed_age(age: int) -> str:
 
     :rtype: str
     """
-    
+
     if age < 18:
         print("¿Sabes hacia dónde dirigir tu futuro? Seguro puedo ayudarte.")
     elif age > 18 and age < 30:

@@ -30,7 +30,8 @@ def in_range_number(num1: int, num2: int, num3: int) -> int:
 
     if num1 > num3 and num2 < num3:
         print(
-            f">>> El número {num3} se encuentra bajo el rango máximo y también se encuentra por encima del rango mínimo.")
+            f">>> El número {num3} se encuentra bajo el rango máximo y también se encuentra por encima del rango mínimo."
+        )
     else:
         print(f">>> El número {num3} excede el límite permitido.")
 

@@ -8,6 +8,7 @@ Reto #1 - Longitud del string
     obtén la longitud de ese string y muéstralo en pantalla.
 """
 
+
 def favourite_course(fav_course: str) -> int:
     """Recibe el nombre del curso favorito del usuario
     y retorna el tamaño de ese string.

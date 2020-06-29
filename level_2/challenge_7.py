@@ -53,6 +53,7 @@ def optional_message(number: int) -> str:
 if __name__ == "__main__":
     print("Bienvenido")
     message = int(
-        input("Ingresa un número entre 1 y 6 y obtendrás un mensaje personalizado: "))
+        input("Ingresa un número entre 1 y 6 y obtendrás un mensaje personalizado: ")
+    )
 
     print(optional_message(message))
