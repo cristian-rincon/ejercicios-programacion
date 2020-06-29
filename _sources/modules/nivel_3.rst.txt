@@ -8,3 +8,8 @@ Ejercicios de programación - Nivel 3
    :members:
    :undoc-members:
    :show-inheritance:
+
+.. automodule:: level_3.challenge_2
+   :members:
+   :undoc-members:
+   :show-inheritance:

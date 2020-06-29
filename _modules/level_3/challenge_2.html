@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>level_2.challenge_3 &mdash; Ejercicios de programacion 1.0 documentation</title>
+  <title>level_3.challenge_2 &mdash; Ejercicios de programacion 1.0 documentation</title>
   
 
   
@@ -133,7 +133,7 @@
         
           <li><a href="../index.html">Module code</a> &raquo;</li>
         
-      <li>level_2.challenge_3</li>
+      <li>level_3.challenge_2</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -148,52 +148,42 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <h1>Source code for level_2.challenge_3</h1><div class="highlight"><pre>
+  <h1>Source code for level_3.challenge_2</h1><div class="highlight"><pre>
 <span></span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">Reto #3 - Rangos cambiantes.</span>
-<span class="sd">============================</span>
+<span class="sd">Reto #2 &quot;Suma&quot; de strings</span>
+<span class="sd">===============================</span>
 
 <span class="sd">.. note::</span>
 
-<span class="sd">    Nuevamente pide a tu usuario que indique 3 números: un límite superior, </span>
-<span class="sd">    un límite inferior y uno de comparación. Si el número de comparación se </span>
-<span class="sd">    encuentra entre los 2 primeros, comunicarlo en pantalla. En caso estar </span>
-<span class="sd">    por debajo del límite inferior o por arriba del límite superior, también </span>
-<span class="sd">    mostrarlo en pantalla.</span>
+<span class="sd">    Crea un programa en el que le pidas en 3 variables distintas: </span>
+<span class="sd">    nombre, apellido y comida favorita. Como salida mostrarás el </span>
+<span class="sd">    mensaje Hola, mi nombres es {nombre} {apellido} y mi comida </span>
+<span class="sd">    favorita es {comida} en un solo string.</span>
 <span class="sd">&quot;&quot;&quot;</span>
 
 
-<div class="viewcode-block" id="in_range_number"><a class="viewcode-back" href="../../modules/nivel_2.html#level_2.challenge_3.in_range_number">[docs]</a><span class="k">def</span> <span class="nf">in_range_number</span><span class="p">(</span><span class="n">num1</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">num2</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">num3</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;Recibe tres números, el primero será el límite superior, el segundo será el</span>
-<span class="sd">    límite inferior y el tercero es el número a comparar.</span>
+<div class="viewcode-block" id="sum_of_strings"><a class="viewcode-back" href="../../modules/nivel_3.html#level_3.challenge_2.sum_of_strings">[docs]</a><span class="k">def</span> <span class="nf">sum_of_strings</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">lastname</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">fav_food</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Recibe nombre, apellido y comida favorita, combina las </span>
+<span class="sd">    cadenas de texto, aplica capitalize() a nombre y apellido </span>
+<span class="sd">    y retorna un mensaje predeterminado.</span>
 
-<span class="sd">    :type num1: int</span>
-<span class="sd">    :param num1: Límite superior</span>
-
-<span class="sd">    :type num2: int</span>
-<span class="sd">    :param num2: Límite inferior.</span>
-
-<span class="sd">    :type num3: int</span>
-<span class="sd">    :param num3: Número a comparar.</span>
-
-<span class="sd">    :rtype: int</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        [type]: [description]</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-    <span class="k">if</span> <span class="n">num1</span> <span class="o">&gt;</span> <span class="n">num3</span> <span class="ow">and</span> <span class="n">num2</span> <span class="o">&lt;</span> <span class="n">num3</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span>
-            <span class="sa">f</span><span class="s2">&quot;&gt;&gt;&gt; El número </span><span class="si">{</span><span class="n">num3</span><span class="si">}</span><span class="s2"> se encuentra bajo el rango máximo y también se encuentra por encima del rango mínimo.&quot;</span>
-        <span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;&gt;&gt;&gt; El número </span><span class="si">{</span><span class="n">num3</span><span class="si">}</span><span class="s2"> excede el límite permitido.&quot;</span><span class="p">)</span></div>
+    <span class="n">message</span> <span class="o">=</span> <span class="nb">print</span><span class="p">(</span>
+        <span class="sa">f</span><span class="s2">&quot;Hola, mi nombre es </span><span class="si">{</span><span class="n">name</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">lastname</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span><span class="si">}</span><span class="s2"> y mi comida favorita es </span><span class="si">{</span><span class="n">fav_food</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">message</span></div>
 
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;¿Cual es tu nombre? &quot;</span><span class="p">)</span>
+    <span class="n">lastname</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;¿Cual es tu apellido? &quot;</span><span class="p">)</span>
+    <span class="n">fav_food</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;¿Cual es tu comida favorita? &quot;</span><span class="p">)</span>
 
-    <span class="n">num1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingresa el límite superior: &quot;</span><span class="p">))</span>
-    <span class="n">num2</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingresa el límite inferior: &quot;</span><span class="p">))</span>
-    <span class="n">num3</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingresa el número a comparar: &quot;</span><span class="p">))</span>
-
-    <span class="n">in_range_number</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">,</span> <span class="n">num3</span><span class="p">)</span>
+    <span class="n">sum_of_strings</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">lastname</span><span class="p">,</span> <span class="n">fav_food</span><span class="p">)</span>
 </pre></div>
 
            </div>
