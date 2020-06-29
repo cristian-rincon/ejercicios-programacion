@@ -9,3 +9,7 @@ Para ver la documentación haz click [aquí](https://cristian-rincon.github.io/e
 
 
 > Los primeros ejercicios se hicieron en archivos de python, a partir del nivel 3 se empezaron a desarrollar en notebooks de jupyter.
+
+## Nivel 3 
+
+[![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cristian-rincon/ejercicios-programacion/blob/master/level_3/programming_challenges_l3.ipynb)
