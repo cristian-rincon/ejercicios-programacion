@@ -2,14 +2,8 @@ language: python
 
 install:
   - pip install -r requirements.txt
-addons:
-  sonarcloud:
-    organization: "cristian-rincon"
-    token:
-      secure: "**************************" # encrypted value of your token
+  
 script:
-  # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
-  - sonar-scanner
   # Use Sphinx to make the html docs
   - cd ./docs/
   - make html
